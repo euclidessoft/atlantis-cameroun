@@ -371,23 +371,33 @@
     color: var(--blanc);
     border-bottom: 5px solid var(--rouge);
 }
-
-.carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform .6s ease-in-out;
-    aspect-ratio: 21 / 9;
-}
 .carousel-item .img-fluid{
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
+/***********Start slide desktop*********/
+.carousel-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    aspect-ratio: 21 / 9;
+
+}
+
+.carousel-img.slide_1 {
+    background-image: url('../images/slide_1.avif');
+}
+
+.carousel-img.slide_2 {
+    background-image: url('../images/slide_2.avif');
+}
+
+.carousel-img.slide_3 {
+    background-image: url('../images/bac_1.avif');
+}
+
+/***********End slide desktop*********/
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
