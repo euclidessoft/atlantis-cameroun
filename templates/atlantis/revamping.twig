@@ -1,0 +1,92 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Revamping tuyauterie GPL"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                <a class="text-white" href="{{ path('Photo') }}">
+                                    {{ "Photo"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Revamping tuyauterie GPL"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Revamping tuyauterie GPL au dépôt SCDP de bonabéri"|trans }}
+                </h3>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div id="gallery">
+                    <a href="{{ asset('images/revamping/revamping_01.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_01.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_02.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_02.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_03.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_03.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_04.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_04.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_05.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_05.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_06.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_06.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_07.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_07.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_08.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_08.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_09.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_09.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_10.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_10.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_11.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_11.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_12.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_12.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/revamping/revamping_13.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/revamping/revamping_13.jpeg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

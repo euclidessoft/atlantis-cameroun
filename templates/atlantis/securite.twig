@@ -1,0 +1,88 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Sécurité et Environnement"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block services %}active{% endblock %}
+{% block services_security %}active{% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 mb-5 page-header">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-6 text-white fw-bold mt-5 mb-4 animated slideInDown">
+                        {{ "Services"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                {{ "Services"|trans }}
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                {{ "Sécurité et Environnement"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container fs-5 mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Sécurité et Environnement"|trans }}
+                </h3>
+            </div>
+            <div class="banner fw-bold">
+                <div class="row">
+                    <div class="col-lg-4 wow bounceInRight" data-wow-delay="0.3s">
+                        <div class="position-relative h-100">
+                            <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start"
+                                 src="{{ asset('images/service_3.avif') }}" alt="pipeline">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 p-4 wow bounceInLeft" data-wow-delay="0.3s">
+                        <p class="p-3">
+                            {{"Chez Atlantis Cameroun, nous nous engageons à assurer la sécurité et à protéger l'environnement dans le domaine des pipelines et des bacs pétroliers."|trans}}
+                            {{"Notre service dédié à la Sécurité et à l'Environnement est conçu pour répondre aux normes les plus élevées de l'industrie et garantir une exploitation responsable de vos infrastructures pétrolières."|trans}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <p class="wow fadeInUp" data-wow-delay="0.2s">
+                    {{"La sécurité est notre priorité absolue."|trans}}
+                    {{"Nous comprenons les risques potentiels associés aux pipelines et aux bacs pétroliers, et nous travaillons en étroite collaboration avec vous pour évaluer, prévenir et atténuer ces risques."|trans}}
+                    {{"Notre équipe d'experts en sécurité effectue des évaluations approfondies des infrastructures existantes et propose des mesures de sécurité sur mesure pour minimiser les incidents et protéger les travailleurs, les communautés locales et l'environnement."|trans}}
+                </p>
+                <p class="wow fadeInUp" data-wow-delay="0.3s">
+                    {{"Nous accordons également une grande importance à la préservation de l'environnement."|trans}}
+                    {{"Notre approche intègre les meilleures pratiques environnementales pour réduire les impacts négatifs potentiels de vos activités."|trans}}
+                    {{"Nous vous aidons à respecter les réglementations environnementales en vigueur, à surveiller les émissions et les déversements éventuels, et à mettre en place des mesures de prévention et de réponse appropriées."|trans}}
+                    {{"Notre objectif est de minimiser l'empreinte environnementale tout en assurant une exploitation efficace et durable de vos pipelines et de vos bacs pétroliers."|trans}}
+                </p>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">
+                    {{"Chez Atlantis Cameroun, nous sommes à la pointe des technologies et des innovations pour renforcer la sécurité et l'environnement de vos infrastructures pétrolières."|trans}}
+                    {{"Nous utilisons des systèmes de surveillance avancés, tels que les capteurs en temps réel et les technologies de détection de fuites, pour identifier rapidement les anomalies et réagir de manière proactive."|trans}}
+                    {{"De plus, nous offrons des formations régulières à votre personnel sur les bonnes pratiques de sécurité et les protocoles environnementaux pour garantir une culture de sécurité et de protection de l'environnement au sein de votre organisation."|trans}}
+                </p>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">
+                    {{"Nous croyons fermement que la sécurité et la protection de l'environnement sont essentielles pour une exploitation responsable des pipelines et des bacs pétroliers."|trans}}
+                    {{"Nous nous engageons à fournir des solutions personnalisées, adaptées à vos besoins spécifiques en matière de sécurité et d'environnement."|trans}}
+                    {{"Notre équipe expérimentée est prête à travailler en partenariat avec vous pour assurer une conformité réglementaire, minimiser les risques et préserver l'environnement dans toutes vos opérations."|trans}}
+                </p>
+                <p class="mb-5 wow fadeInUp text-center" data-wow-delay="0.7s">
+                    {{ "Il est important de noter que les pipelines et les bacs pétroliers sont soumis à des réglementations spécifiques dans chaque juridiction."|trans }}
+                    {{ "Les suggestions ci-dessus sont des recommandations générales et il est essentiel de consulter les réglementations locales et les meilleures pratiques de l'industrie lors du développement et de l'exploitation de ces infrastructures."|trans }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

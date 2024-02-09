@@ -1,0 +1,218 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Réservoir de 10 000m3, Travaux de montage"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                <a class="text-white" href="{{ path('Photo') }}">
+                                    {{ "Photo"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                <a class="text-white" href="{{ path('Reservoir-10000') }}">
+                                    {{ "Réservoir de 10 000m3"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Pendant les travaux de montage du réservoir"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Pendant les travaux de montage du réservoir"|trans }}
+                </h3>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div id="gallery">
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61499.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61499.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61500.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61500.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61501.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61501.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61502.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61502.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61503.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61503.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61504.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61504.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61505.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61505.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61507.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61507.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61551.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61551.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61552.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61552.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61554.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61554.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61555.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61555.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61556.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61556.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61557.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61557.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61569.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61569.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61571.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61571.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61573.jpg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61573.jpg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61574.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61574.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61575.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61575.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61576.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61576.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61577.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61577.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61578.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61578.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61579.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61579.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61580.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61580.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61581.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61581.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61582.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61582.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61583.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61583.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61584.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61584.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61585.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61585.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61586.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61586.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61587.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61587.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61588.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61588.jpeg') }}"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

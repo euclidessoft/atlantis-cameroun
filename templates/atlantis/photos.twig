@@ -1,0 +1,95 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Gallerie photo"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">{{ "Accueil"|trans }}</a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Photo"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Gallerie photo"|trans }}
+                </h3>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <a href="{{ path('Pipeline-4km') }}" class="text-dark hover-rouge">
+                        <div class="album-cover mb-5">
+                            <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_34.jpg') }}" alt="">
+                        </div>
+                        <h5 class="text-center text-uppercase lh-base mt-4">
+                            {{ "Réalisation du nouveau pipeline de 4km reliant le Port Autonôme de Douala à la SCDP"|trans }}
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{{ path('Reservoir-10000') }}" class="text-dark hover-rouge">
+                        <div class="album-cover mb-5">
+                            <img src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61582.jpeg') }}"
+                                 alt="">
+                        </div>
+                        <h5 class="text-center text-uppercase lh-base mt-4">
+                            {{ "Construction d'un reservoir de 10 000m3 au dépôt SCDP de NSAM"|trans }}
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{{ path('Reservoir-DCI') }}" class="text-dark hover-rouge">
+                        <div class="album-cover mb-5">
+                            <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_34.jpeg') }}" alt="">
+                        </div>
+                        <h5 class="text-center text-uppercase lh-base mt-4">
+                            {{ "Réalisation d'un reservoir DCI boulonné de 3000m3 au dépot SCDP de Bafoussam"|trans }}
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{{ path('Reservoir-JET') }}" class="text-dark hover-rouge">
+                        <div class="album-cover mb-5">
+                            <img src="{{ asset('images/reservoir-JETA1/reservoir-JETA1_12.jpeg') }}" alt="">
+                        </div>
+                        <h5 class="text-center text-uppercase lh-base mt-4">
+                            {{ "Transformation du réservoir pétrole en réservoir JET A1 au dépôt SCDP de NSAM"|trans }}
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{{ path('Revamping') }}" class="text-dark hover-rouge">
+                        <div class="album-cover mb-5">
+                            <img src="{{ asset('images/revamping/revamping_12.jpeg') }}" alt="">
+                        </div>
+                        <h5 class="text-center text-uppercase lh-base mt-4">
+                            {{ "Revamping tuyauterie GPL au dépôt SCDP de bonabéri"|trans }}
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

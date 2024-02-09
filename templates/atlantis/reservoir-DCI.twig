@@ -1,0 +1,171 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Réservoir DCI"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                <a class="text-white" href="{{ path('Photo') }}">
+                                    {{ "Photo"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Réservoir DCI"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Reservoir DCI boulonné de 3000m3"|trans }}
+                </h3>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div id="gallery">
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_01.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_01.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_02.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_02.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_03.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_03.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_04.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_04.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_05.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_05.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_06.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_06.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_07.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_07.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_08.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_08.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_09.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_09.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_10.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_10.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_11.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_11.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_12.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_12.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_13.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_13.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_14.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_14.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_15.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_15.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_16.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_16.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_17.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_17.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_18.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_18.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_19.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_19.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_20.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_20.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_21.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_21.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_22.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_22.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_23.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_23.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_24.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_24.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_25.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_25.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_26.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_26.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_27.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_27.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_28.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_28.jpeg') }}" alt="">
+                    </a>
+                    
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_29.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_29.jpeg') }}" alt="">
+                    </a>
+                    
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_30.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_30.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_31.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_31.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_32.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_32.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_33.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_33.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_34.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_34.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_35.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_35.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_36.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_36.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_37.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_37.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-DCI/reservoir-DCI_38.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-DCI/reservoir-DCI_38.jpeg') }}" alt="">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

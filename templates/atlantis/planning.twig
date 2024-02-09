@@ -1,0 +1,131 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Planification, Conception et Construction"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block services %}active{% endblock %}
+{% block services_planning %}active{% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Services"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Services"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Planification, Conception et Construction"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container fs-5 mt-5 mb-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title bg-white text-center text-bleu px-3 mb-5">
+                    {{ "Planification, Conception et Construction"|trans }}
+                </h2>
+                <p class="banner fw-bold fs-4 mt-5 mb-5 p-5">
+                    {{ "Chez Atlantis Cameroun, nous offrons une gamme complète de services de planification, de conception et de construction de pipelines et de bacs pétroliers."|trans }}
+                    {{ "Notre expertise et notre savoir-faire nous permettent de répondre aux besoins uniques de chaque projet, en garantissant des résultats de qualité supérieure."|trans }}
+                </p>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-start fit-cover"
+                             src="{{ asset('images/ingenieur.avif') }}" alt="ingenieur">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-5">
+                        {{ "La planification est la première étape cruciale de tout projet."|trans }}
+                    </p>
+                    <p class="mb-5">
+                        {{ "Notre équipe de professionnels chevronnés travaille en étroite collaboration avec vous pour comprendre vos objectifs, vos contraintes et vos exigences spécifiques."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "Nous effectuons une analyse approfondie du terrain, des ressources disponibles et des réglementations en vigueur pour élaborer des plans détaillés qui optimisent l'efficacité et la sécurité de votre infrastructure."|trans }}
+                    </p>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-5">
+                        {{ "La conception est une étape essentielle dans la création de pipelines et de bacs pétroliers fiables et performants."|trans }}
+                    </p>
+                    <p class="mb-5">
+                        {{ "Nos experts en ingénierie utilisent les dernières technologies et les meilleures pratiques de l'industrie pour développer des solutions sur mesure qui répondent aux normes les plus élevées."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "Nous prenons en compte tous les aspects, de la résistance structurelle à la gestion des risques, en passant par la durabilité environnementale, afin de garantir des installations sûres, durables et efficientes."|trans }}
+                    </p>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-end fit-cover"
+                             src="{{ asset('images/ingenieurs.avif') }}" alt="ingenieurs">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-start fit-cover"
+                             src="{{ asset('images/construction.avif') }}" alt="bac_1">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-5">
+                        {{ "La construction est l'étape où nos compétences techniques prennent vie."|trans }}
+                    </p>
+                    <p class="mb-5">
+                        {{ "Nous avons une équipe de professionnels qualifiés et expérimentés qui travaillent avec précision et efficacité pour réaliser votre projet."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "En utilisant des méthodes de construction avancées et en respectant les délais convenus, nous assurons la mise en place de pipelines et de bacs pétroliers de haute qualité, conformes aux spécifications requises."|trans }}
+                    </p>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-5">
+                        {{ "Nous nous engageons à fournir des services de la plus haute qualité, en accordant une attention particulière à la sécurité et à la protection de l'environnement tout au long du processus."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "Notre équipe de gestion de projet expérimentée veille à ce que chaque étape soit réalisée selon les normes les plus strictes, assurant ainsi un résultat final qui répond à vos attentes et dépasse vos exigences."|trans }}
+                    </p>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-end fit-cover"
+                             src="{{ asset('images/bac_1.avif') }}" alt="ingenieurs">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-12 wow zoomIn" data-wow-delay="0.3s">
+                  <p class="mb-5 text-center">
+                      {{ "Que vous ayez besoin de la planification, de la conception ou de la construction de pipelines et de bacs pétroliers, Atlantis Cameroun est votre partenaire de confiance."|trans }}
+                      {{ "Faites-nous confiance pour vous fournir des solutions sur mesure, fiables et durables, qui répondent à vos besoins spécifiques et vous aident à atteindre vos objectifs en matière d'infrastructure pétrolière."|trans }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">&nbsp;</div>
+    </div>
+
+{% endblock %}

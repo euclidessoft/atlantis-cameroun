@@ -1,0 +1,41 @@
+<div class="container-fluid py-5 mb-5 page-header">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-6 text-white fw-bold mt-5 mb-4 animated slideInDown">
+                    {% block page_title %} {% endblock %}
+                </h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item">
+                            <a class="text-white" href="{{ path('Accueil') }}">{{ "Accueil"|trans }}</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            {% block breadcrumb_2 %} {% endblock %}
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            {% block breadcrumb_3 %} {% endblock %}
+                        </li>
+                        <li class="breadcrumb-item">
+                            {% block breadcrumb_4 %} {% endblock %}
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            {% block breadcrumb_5 %} {% endblock %}
+                        </li>
+                    </ol>
+                </nav>
+                <div class="col-lg-4 offset-lg-4">
+                    <div class="search-box mt-5">
+                        <form class="search-form d-flex" action="" method="post">
+                            <input class="form-control" type="search" placeholder="{{ 'Rechercher'|trans }}"
+                                   aria-label="Search">
+                            <button class="btn btn-search" type="submit">
+                                <i class="fa fa-search fa-lg text-rouge"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

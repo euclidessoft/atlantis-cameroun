@@ -1,0 +1,142 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "A propos"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block about %}active{% endblock %}
+{% block body %}
+    <!-- Header Start -->
+    <div class="container-fluid py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-4 animated slideInDown">
+                        {{ "A propos"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                {{ "A propos"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container fs-5 mb-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title bg-white text-center text-bleu px-3 mb-5">
+                    {{ "Atlantis Cameroun"|trans }}
+                </h2>
+                <p class="banner fw-bold fs-5 mb-5 p-5">
+                    {{ "Atlantis Cameroun est un leader reconnu dans le domaine de la construction de pipelines et de bacs pétroliers."|trans }}
+                    {{ "Forte de nombreuses années d'expérience, notre entreprise se distingue par son expertise technique et son engagement envers la qualité et la sécurité."|trans }}
+                    {{ "Nous sommes spécialisés dans la conception, la construction et la maintenance de pipelines, assurant ainsi le transport efficace et sécurisé des ressources pétrolières."|trans }}
+                    {{ "Nos équipes hautement qualifiées travaillent en étroite collaboration avec nos clients pour développer des solutions sur mesure répondant à leurs besoins spécifiques."|trans }}
+                </p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-start fit-cover"
+                             src="{{ asset('images/pipeline_1.avif') }}" alt="pipeline_1">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-4">
+                        {{ "Chez Atlantis Cameroun, nous comprenons l'importance cruciale des pipelines et des bacs pétroliers dans l'industrie énergétique."|trans }}
+                        {{ "Ces infrastructures jouent un rôle essentiel dans le transport efficace et sécurisé des ressources pétrolières et gazières, garantissant ainsi un approvisionnement stable et fiable pour les marchés locaux et internationaux."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "Notre entreprise s'engage fermement à respecter les normes internationales de qualité et de sécurité."|trans }}
+                        {{ "Nous mettons en œuvre des processus rigoureux pour garantir que chaque étape de la construction des pipelines et des bacs pétroliers est réalisée selon les meilleures pratiques de l'industrie."|trans }}
+                        {{ "De plus, nous nous engageons à minimiser notre impact sur l'environnement en adoptant des technologies et des méthodes respectueuses de l'écosystème."|trans }}
+                    </p>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-5">
+                        {{ "Au-delà de notre expertise technique, notre culture d'entreprise repose sur des valeurs fondamentales telles que l'intégrité, l'engagement envers nos clients et la recherche constante de l'excellence."|trans }}
+                        {{ "Nous considérons nos clients comme des partenaires et nous nous engageons à établir des relations solides et durables avec eux, en fournissant des services de qualité supérieure et en respectant les délais."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "Notre réussite repose sur notre engagement envers l'excellence opérationnelle, la fiabilité et la satisfaction de nos clients."|trans }}
+                        {{ "Nous sommes fiers de notre capacité à mener à bien des projets complexes et d'envergure, en respectant les délais et les budgets impartis."|trans }}
+                    </p>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-end fit-cover"
+                             src="{{ asset('images/pipeline_2.avif') }}" alt="pipeline_2">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-start fit-cover"
+                        src="{{ asset('images/bac_1.avif') }}" alt="bac_1">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-5">
+                        {{ "Chez Atlantis Cameroun, nous comprenons l'importance cruciale des pipelines et des bacs pétroliers dans l'industrie énergétique."|trans }}
+                        {{ "Ces infrastructures jouent un rôle essentiel dans le transport efficace et sécurisé des ressources pétrolières et gazières, garantissant ainsi un approvisionnement stable et fiable pour les marchés locaux et internationaux."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "En ce qui concerne les bacs pétroliers, nous proposons des installations modernes et fiables pour le stockage et la distribution de produits pétroliers."|trans }}
+                        {{ "Nos bacs sont conçus pour répondre aux normes les plus strictes en matière de sécurité et de préservation de l'environnement."|trans }}
+                    </p>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-0">
+                        {{ "Notre équipe d'experts chevronnés possède une vaste expérience dans la conception, la construction et la maintenance de pipelines et de bacs pétroliers."|trans }}
+                        {{ "Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs besoins spécifiques, en tenant compte des contraintes géographiques, environnementales et réglementaires."|trans }}
+                        <br>
+                        {{ "En combinant notre expertise technique avec une approche axée sur l'innovation, nous développons des solutions sur mesure qui répondent aux exigences les plus élevées en termes de sécurité, d'efficacité et de durabilité."|trans }}
+                        {{ "Nous accordons une grande importance à la durabilité environnementale et à la responsabilité sociale."|trans }}
+                        {{ "Nous nous efforçons d'intégrer des pratiques respectueuses de l'environnement tout au long de nos projets, en minimisant l'impact sur les écosystèmes locaux."|trans }}
+                    </p>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-end fit-cover"
+                             src="{{ asset('images/ingenieurs.avif') }}" alt="ingenieurs">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-start fit-cover"
+                             src="{{ asset('images/construction.avif') }}" alt="construction">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
+                    <p class="mb-5">
+                        {{ "La construction est l'étape où nos compétences techniques prennent vie."|trans }}
+                        {{ "Nous avons une équipe de professionnels qualifiés et expérimentés qui travaillent avec précision et efficacité pour réaliser votre projet."|trans }}
+                    </p>
+                    <p class="mb-0">
+                        {{ "En utilisant des méthodes de construction avancées et en respectant les délais convenus, nous assurons la mise en place de pipelines et de bacs pétroliers de haute qualité, conformes aux spécifications requises."|trans }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">&nbsp;</div>
+    </div>
+    <!-- About End -->
+{% endblock %}

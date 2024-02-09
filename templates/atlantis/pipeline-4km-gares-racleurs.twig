@@ -1,0 +1,214 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Pipeline 4KM Gare racleur"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                <a class="text-white" href="{{ path('Photo') }}">
+                                    {{ "Photo"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                <a class="text-white" href="{{ path('Pipeline-4km') }}">
+                                    {{ "Pipeline 4KM"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Gare racleur"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Gare racleur"|trans }}
+                </h3>
+            </div>
+            <div class="row justify-content-center">
+                <div id="gallery">
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_01.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_01.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_02.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_02.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_03.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_03.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_04.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_04.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_05.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_05.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_06.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_06.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_07.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_07.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_08.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_08.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_09.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_09.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_10.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_10.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_11.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_11.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_12.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_12.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_13.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_13.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_14.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_14.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_15.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_15.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_16.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_16.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_17.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_17.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_18.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_18.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_19.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_19.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_20.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_20.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_21.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_21.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_22.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_22.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_23.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_23.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_24.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_24.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_25.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_25.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_26.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_26.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_27.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_27.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_28.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_28.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_29.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_29.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_30.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_30.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_31.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_31.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_32.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_32.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_33.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_33.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_34.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_34.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_35.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_35.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_36.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_36.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_37.jpg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_37.jpg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_38.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_38.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_39.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_39.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_40.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_40.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_41.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_41.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_42.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_42.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_43.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_43.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_44.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_44.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_45.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_45.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_46.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_46.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_47.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_47.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_48.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_48.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_49.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_49.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_50.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_50.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_51.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_51.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/pipeline-4km/gares-racleurs/gare_52.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_52.jpeg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

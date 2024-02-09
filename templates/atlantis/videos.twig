@@ -1,0 +1,50 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Vidéo"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %}active{% endblock %}
+{% block document %}active{% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 animated slideInDown">
+                        {{ "Vidéo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}</a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Vidéo"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mt-5 mb-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Vidéo"|trans }}
+                </h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 offset-lg-1">
+                    <iframe width="720" height="530" src="https://www.youtube.com/embed/ZZoOPTkXBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

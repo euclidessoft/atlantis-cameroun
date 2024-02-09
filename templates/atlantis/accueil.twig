@@ -1,0 +1,535 @@
+{% extends 'layout.html.twig' %}
+{% block home %}active{% endblock %}
+{% block body %}
+
+    <!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel header-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active">
+                    <img class="img-fluid w-100 animated fadeIn" src="{{ asset('images/slide_1.avif') }}"
+                         alt="Atlantis Cameroun">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center carousel-overlay">
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-sm-10 col-lg-8">
+                                    <h1 class="display-3 text-white fw-bold animated slideInRight">
+                                        {{ "Atlantis Cameroun"|trans }}
+                                    </h1>
+                                    <p class="fs-5 text-white mb-4 pb-2 animated slideInLeft">
+                                        {{ "Bienvenue chez Atlantis Cameroun, votre partenaire de confiance spécialisé dans la construction, avec stricte respect de l'environnement, de pipelines et de bacs pétroliers."|trans }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img class="img-fluid w-100 animated zoomIn" src="{{ asset('images/slide_2.avif') }}"
+                         alt="Spécialiste des Pipelines">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center carousel-overlay">
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-sm-10 col-lg-8">
+                                    <h1 class="display-3 text-white fw-bold animated flipInX delay-1s">
+                                        {{ "Spécialiste des Pipelines"|trans }}
+                                    </h1>
+                                    <p class="fs-5 text-white mb-4 pb-2 animated flipInX delay-1s">
+                                        {{ "Nous sommes spécialisés dans la conception, la construction et la maintenance de pipelines, assurant ainsi le transport efficace et sécurisé des ressources pétrolières."|trans }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img class="img-fluid w-100 animated fadeInLeft" src="{{ asset('images/bac_1.avif') }}"
+                         alt="Bacs petroliers">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center carousel-overlay">
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-sm-10 col-lg-8">
+                                    <h1 class="display-3 text-white fw-bold animated fadeInDownBig delay-05s">
+                                        {{ "Leader dans les bacs petroliers"|trans }}
+                                    </h1>
+                                    <p class="fs-5 text-white mb-4 pb-2 animated fadeInUpBig delay-05s">
+                                        {{ "Forte de nombreuses années d'expérience, notre entreprise se distingue par son expertise technique et son engagement envers la qualité et la sécurité."|trans }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" aria-label="Slide 1"
+                        class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-control">
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                        data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                        data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded-start fit-cover"
+                             src="{{ asset('images/pipeline_1.avif') }}" alt="A propos">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <h2 class="section-title bg-white text-start text-bleu pe-3 mb-5">
+                        {{ "Qui sommes-nous"|trans }}
+                    </h2>
+                    <p class="mb-4">
+                        {{ "Atlantis Cameroun est un leader reconnu dans le domaine de la construction de pipelines et de bacs pétroliers. Forte de nombreuses années d'expérience, notre entreprise se distingue par son expertise technique et son engagement envers la qualité et la sécurité."|trans }}
+                    </p>
+                    <p class="mb-4">
+                        {{ "Nous sommes spécialisés dans la conception, la construction et la maintenance de pipelines, assurant ainsi le transport efficace et sécurisé des ressources pétrolières. Nos équipes hautement qualifiées travaillent en étroite collaboration avec nos clients pour développer des solutions sur mesure répondant à leurs besoins spécifiques."|trans }}
+                    </p>
+                    <a class="btn btn-rouge rounded-5 py-3 px-5 mt-2" href="{{ path('About') }}">
+                        {{ "En savoir plus ..."|trans }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mb-5 mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="section-title bg-white text-center text-bleu px-3 mb-5">
+                    {{ "Nos Services"|trans }}
+                </h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded-5">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid rounded-top" src="{{ asset('images/service_1.avif') }}"
+                                 alt="Planification, Conception et Construction">
+                        </div>
+                        <div class="text-center p-4 pb-4">
+                            <h4 class="mb-3 service-tittle">
+                                {{ "Planification, Conception et Construction"|trans }}
+                            </h4>
+                            <p class="mb-4">
+                                {{ "Nous sommes fiers de fournir une gamme complète de services dans la planification, la conception et la construction de pipelines et de bacs pétroliers. Avec notre expertise technique et notre engagement envers l'excellence, nous offrons des solutions sur mesure qui répondent aux besoins spécifiques de nos clients."|trans }}
+                            </p>
+                            <a class="btn btn-rouge rounded-5 py-3 px-4 mt-2" href="{{ path('Planning') }}">
+                                {{ "En savoir plus ..."|trans }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded-5">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid rounded-top" src="{{ asset('images/service_2.avif') }}"
+                                 alt="Amélioration du développement des pipelines">
+                        </div>
+                        <div class="text-center p-4 pb-4">
+                            <h4 class="mb-3 service-tittle">
+                                {{ "Amélioration du développement des pipelines"|trans }}
+                            </h4>
+                            <p class="mb-4">
+                                {{ "Notre objectif principal est d'améliorer la performance, la fiabilité et la sécurité de vos infrastructures pétrolières. Nous travaillons en étroite collaboration avec votre entreprise pour évaluer vos pipelines et vos bacs pétroliers, en identifiant les domaines d'amélioration potentiels et en proposant des solutions sur mesure."|trans }}
+                            </p>
+                            <a class="btn btn-rouge rounded-5 py-3 px-4 mt-2" href="{{ path('Improve') }}">
+                                {{ "En savoir plus ..."|trans }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded-5">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid rounded-top" src="{{ asset('images/service_3.avif') }}"
+                                 alt="Sécurité et environnement">
+                        </div>
+                        <div class="text-center p-4 pb-4">
+                            <h4 class="mb-3 service-tittle">
+                                {{ "Sécurité et environnement"|trans }}
+                            </h4>
+                            <p class="mb-4">
+                                {{ "Nous nous engageons à assurer la sécurité et à protéger l'environnement dans le domaine des pipelines pétroliers. Notre service dédié à la Sécurité et à l'environnement est conçu pour répondre aux normes de l'industrie et garantir une exploitation responsable de vos infrastructures pétrolières."|trans }}
+                            </p>
+                            <a class="btn btn-rouge rounded-5 py-3 px-4 mt-2" href="{{ path('Securite') }}">
+                                {{ "En savoir plus ..."|trans }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Realisation Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mb-5 mt-5">
+                <h2 class="section-title bg-white text-center text-bleu px-3 mb-5">
+                    {{ "Réalisations"|trans }}
+                </h2>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item">
+                    <img class="p-2 mx-auto mb-3 rounded-top fit-cover"
+                         src="{{ asset('images/reservoir-JETA1/reservoir-JETA1_12.jpeg') }}"
+                         alt="">
+                    <h5 class="mb-2">
+                        <i class="fa-solid fa-calendar-alt me-2 text-rouge"></i>
+                        2019
+                    </h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot me-2 text-rouge"></i>
+                        {{ "Dépôt SCDP de NSAM Yaoundé"|trans }}
+                    </p>
+                    <div class="testimonial-text bg-light text-center p-4 rounded-bottom">
+                        <p class="mb-0">
+                            <a href="{{ path('Realisations') }}#Reservoir-JET" class="text-dark">
+                                {{ "Transformation du réservoir pétrole en réservoir du JET A1"|trans }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <img class="p-2 mx-auto mb-3 rounded-top fit-cover"
+                         src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61582.jpeg') }}"
+                         alt="">
+                    <h5 class="mb-2">
+                        <i class="fa-solid fa-calendar-alt me-2 text-rouge"></i>
+                        2020
+                    </h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot me-2 text-rouge"></i>
+                        {{ "Dépôt SCDP de NSAM Yaoundé"|trans }}
+                    </p>
+                    <div class="testimonial-text bg-light text-center p-4 rounded-bottom">
+                        <p class="mb-0">
+                            <a href="{{ path('Realisations') }}#reservoir-10000m3" class="text-dark">
+                                {{ "Construction d’un réservoir de 10.000m"|trans }}<sup>3</sup>
+                                {{ "pour stockage gasoil"|trans }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <img class="p-2 mx-auto mb-3 rounded-top fit-cover"
+                         src="{{ asset('images/revamping/revamping_12.jpeg') }}" alt="">
+                    <h5 class="mb-2">
+                        <i class="fa-solid fa-calendar-alt me-2 text-rouge"></i>
+                        2020
+                    </h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot me-2 text-rouge"></i>
+                        {{ "Dépôt SCDP de BONABERI"|trans }}
+                    </p>
+                    <div class="testimonial-text bg-light text-center p-4 rounded-bottom">
+                        <p class="mb-0">
+                            <a href="{{ path('Realisations') }}#revamping" class="text-dark">
+                                {{ "Revamping des tuyauteries"|trans }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <img class="p-2 mx-auto mb-3 rounded-top fit-cover"
+                         src="{{ asset('images/pipeline-4km/gares-racleurs/gare_34.jpg') }}" alt="">
+                    <h5 class="mb-2">
+                        <i class="fa-solid fa-calendar-alt me-2 text-rouge"></i>
+                        2022
+                    </h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot me-2 text-rouge"></i>
+                        PAD-CAMRAIL-SCDP
+                    </p>
+                    <div class="testimonial-text bg-light text-center p-4 rounded-bottom">
+                        <p class="mb-0">
+                            <a href="{{ path('Realisations') }}#pipeline-4km" class="text-dark">
+                                {{ 'Pipeline de 10" sur 4KM reliant le port autonome au dépôt SCDP de Bessengue'|trans }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <img class="p-2 mx-auto mb-3 rounded-top fit-cover"
+                         src="{{ asset('images/reservoir-DCI/reservoir-DCI_34.jpeg') }}"
+                         alt="">
+                    <h5 class="mb-2">
+                        <i class="fa-solid fa-calendar-alt me-2 text-rouge"></i>
+                        2023
+                    </h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot me-2 text-rouge"></i>
+                        {{ "Dépôt SCDP de Bafoussam"|trans }}
+                    </p>
+                    <div class="testimonial-text bg-light text-center p-4 rounded-bottom">
+                        <p class="mb-0">
+                            <a href="{{ path('Realisations') }}#reservoir-DCI" class="text-dark">
+                                {{ "Construction d’un réservoir boulonné défense contre incendie de 3.000m"|trans }}<sup>3</sup>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Realisation End -->
+
+    <!-- Chiffre Start -->
+    <div class="container-fluid chiffre p-5 wow fadeInUp text-white align-items-center justify-content-center"
+         data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mt-5 mb-5">
+                <h1 class="fw-bold text-uppercase animated zoomIn wow" data-wow-delay="0.2s">
+                    {{ "Atlantis en chiffre"|trans }}
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="text-center mt-3 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <i class="fa-solid fa-building-user fa-7x"></i>
+                        <h1 class="fw-bold mt-3 mb-0 compteur">1234</h1>
+                        <p class="fs-5">
+                            {{ "Partenaires satisfaits"|trans }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="text-center mt-3 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <i class="fa-solid fa-faucet fa-7x"></i>
+                        <h1 class="fw-bold mt-3 mb-0 compteur">1234</h1>
+                        <p class="fs-5">
+                            {{ "KM de Pipeline réalisés"|trans }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="text-center mt-3 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <i class="fa-solid fa-drum-steelpan fa-7x"></i>
+                        <h1 class="fw-bold mt-3 mb-0 compteur">1234</h1>
+                        <p class="fs-5">
+                            {{ "Bacs pétroliers construits"|trans }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="text-center mt-3 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
+                        <i class="fa-solid fa-list-check fa-7x"></i>
+                        <h1 class="fw-bold mt-3 mb-0 compteur">1234</h1>
+                        <p class="fs-5">
+                            {{ "Projets déjà livrés"|trans }}
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div>
+    </div>
+    <!-- Chiffre End -->
+
+    <!-- Gallerie Start -->
+    <div class="container-fluid py-5 gallery">
+        <div class="container">
+            <div class="text-center mt-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="section-title bg-white text-center text-bleu px-3 mb-5">
+                    {{ "Gallerie"|trans }}
+                </h1>
+            </div>
+            <div class="row g-3 text-bleu">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.2s">
+                            <a class="position-relative d-block overflow-hidden" href="{{ path('Reservoir-JET') }}">
+                                <img class="img-fluid fit-cover h-300 rounded-5"
+                                     src="{{ asset('images/reservoir-JETA1/reservoir-JETA1_12.jpeg') }}" alt="">
+                                <div class="bg-op08 text-center position-absolute bottom-0 end-0 py-2 px-3 m-1 rounded-5">
+                                    <h6 class="m-0 text-rouge">
+                                        {{ "Transformation du réservoir pétrole en réservoir du JET A1"|trans }}
+                                    </h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="{{ path('Reservoir-10000') }}">
+                                <img class="img-fluid fit-cover h-300 rounded-5"
+                                     src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61582.jpeg') }}"
+                                     alt="">
+                                <div class="bg-op08 text-center position-absolute bottom-0 end-0 py-2 px-3 m-1 rounded-5">
+                                    <h6 class="m-0 text-rouge">
+                                        {{ "Réservoir de 10.000m"|trans }}<sup>3</sup>
+                                    </h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="{{ path('Revamping') }}">
+                                <img class="img-fluid fit-cover h-300 rounded-5"
+                                     src="{{ asset('images/revamping/revamping_12.jpeg') }}"
+                                     alt="">
+                                <div class="bg-op08 text-center position-absolute bottom-0 end-0 py-2 px-3 m-1 rounded-5">
+                                    <h6 class="m-0 text-rouge">
+                                        {{ "Revamping des tuyauteries"|trans }}
+                                    </h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="{{ path('Pipeline-4km') }}">
+                        <img class="img-fluid fit-cover position-absolute w-100 h-100 rounded-5"
+                             src="{{ asset('images/pipeline-4km/gares-racleurs/gare_30.jpg') }}" alt="">
+                        <div class="bg-op08 text-center position-absolute bottom-0 end-0 py-2 px-3 m-1 rounded-5">
+                            <h6 class="m-0 text-rouge">
+                                {{ 'Pipeline de 10" sur 4km'|trans }}
+                            </h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallerie End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mt-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="section-title bg-white text-center text-bleu px-3 mb-5">
+                    {{ "Notre équipe"|trans }}
+                </h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ asset('images/team_1.avif') }}" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center team-caption">
+                            <div class="bg-light rounded-top d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ asset('images/team_2.avif') }}" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center team-caption">
+                            <div class="bg-light rounded-top d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ asset('images/team_3.avif') }}" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center team-caption">
+                            <div class="bg-light rounded-top d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="{{ asset('images/team_4.avif') }}" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center team-caption">
+                            <div class="bg-light rounded-top d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Instructor Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            &nbsp;
+        </div>
+    </div>
+    <!-- Team End -->
+
+{% endblock %}

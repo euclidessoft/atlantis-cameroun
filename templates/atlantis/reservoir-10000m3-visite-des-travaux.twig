@@ -1,0 +1,98 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Réservoir de 10 000m3, Visite des travaux"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                <a class="text-white" href="{{ path('Photo') }}">
+                                    {{ "Photo"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                <a class="text-white" href="{{ path('Reservoir-10000') }}">
+                                    {{ "Réservoir de 10 000m3"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Visite des travaux"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Visite des travaux par le DG SCDP et ATLANTIS CAMEROUN"|trans }}
+                </h3>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div id="gallery">
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_01.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_01.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_02.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_02.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_03.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_03.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_04.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_04.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_05.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_05.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_06.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_06.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_07.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_07.jpeg') }}"
+                             alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_08.jpeg') }}"
+                       class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-10000m3/visite-des-travaux/travaux_08.jpeg') }}"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% block title %} Atlantis Cameroun - Leader dans la construction des pipelines et bacs petroliers {% endblock %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Atlantis Cameroun">
+    <meta name="description" content="Leader dans la construction des pipelines et bacs petroliers">
+    <meta name="author" content="EUCLIDES">
+
+    <!-- Favicon -->
+    <!--    <link href="images/favicon.ico" rel="icon">-->
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ asset('lib/fontawesome/css/all.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('lib/owlcarousel/css/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('lib/photobox/css/photobox.css')}}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+{#    <link href="{{ asset('css/bootstrap.css')}}" rel="stylesheet">#}
+    <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Site Stylesheet -->
+    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+{#    <link href="{{ asset('css/style.min.css')}}" rel="stylesheet">#}
+</head>
+
+<body>
+
+<div class="container-fluid topbar">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="row row-cols-auto">
+                <div class="">
+                    <i class="fa-solid fa-location-dot fa-lg me-2"></i>BP 15746 Douala Akwa, Cameroun
+                </div>
+                <div class="">
+                    <a href="tel:+237621117743">
+                        <i class="fa-solid fa-phone fa-lg me-2"></i>
+                        +237 6 21 11 77 43
+                    </a>
+                </div>
+                <div class="">
+                    <a href="mailto:info@atlantis-cameroun.com">
+                        <i class="fa-solid fa-envelope fa-lg me-2"></i>
+                        info@atlantis-cameroun.com
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="socialbar">
+                <a class="social facebook me-2" href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="social twitter me-2" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="social instagram me-2" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="social linkedin me-2" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a class="social" href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light shadow sticky-top p-0">
+    <a href="{{ path('Accueil')}}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 logo fw-bold">
+            <i class="fa-brands fa-pied-piper fa-lg me-2"></i>ATLANTIS
+        </h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#main-nav">
+        <i class="fa fa-bars fa-lg"></i>
+    </button>
+    <div class="collapse navbar-collapse pe-5" id="main-nav">
+        <div class="navbar-nav ms-auto d-flex align-items-center p-4 p-lg-0">
+            <a href="{{ path('Accueil')}}" class="nav-item nav-link {% block home %} {% endblock %}">{{ "Accueil"|trans }}</a>
+            <a href="{{ path('About')}}" class="nav-item nav-link {% block about %} {% endblock %}">{{ "A propos"|trans }}</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle {% block services %} {% endblock %}" data-bs-toggle="dropdown">{{ "Services"|trans }}</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{ path('Planning')}}" class="dropdown-item {% block services_planning %} {% endblock %}">{{ "Planification, Conception et Construction"|trans }}</a>
+                    <a href="{{ path('Improve')}}" class="dropdown-item {% block services_improve %} {% endblock %}">{{ "Amélioration du développement des pipelines"|trans }}</a>
+                    <a href="{{ path('Securite')}}" class="dropdown-item {% block services_security %} {% endblock %}">{{ "Sécurité et Environnement"|trans }}</a>
+                </div>
+            </div>
+            <a href="{{ path('Realisations')}}" class="nav-item nav-link {% block realisations %} {% endblock %}">{{ "Réalisations"|trans }}</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle {% block gallery %} {% endblock %}" data-bs-toggle="dropdown">{{ "Gallerie"|trans }}</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{ path('Document')}}" class="dropdown-item {% block document %} {% endblock %}">{{ "Document"|trans }}</a>
+                    <a href="{{ path('Photo')}}" class="dropdown-item {% block photo %} {% endblock %}">{{ "Photo"|trans }}</a>
+                    <a href="{{ path('Video')}}" class="dropdown-item {% block video %} {% endblock %}">{{ "Vidéo"|trans }}</a>
+                </div>
+            </div>
+            <a href="{{ path('Contact')}}" class="nav-item nav-link {% block contact %} {% endblock %}">{{ "Contact"|trans }}</a>
+            <button id="changelang" class="lang-button">
+                <span id="lang" class="anglais" title="{{ "English"|trans }}"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+{% block body %}
+
+
+{% endblock %}
+
+<!-- Footer Start -->
+<footer class="text-light">
+    <div class="container-fluid footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Atlantis Cameroun</h4>
+                    <p class="">
+                        {{ "Atlantis Cameroun est un leader reconnu dans le domaine de la construction de pipelines et de bacs pétroliers. Forte de nombreuses années d'expérience, notre entreprise se distingue par son expertise technique..."|trans}}
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">{{ "Liens utiles"|trans}}</h4>
+                    <a class="btn btn-link" href="{{ path('About')}}">{{ "A propos"|trans}}</a>
+                    <a class="btn btn-link" href="{{ path('Planning')}}">{{ "Services"|trans}}</a>
+                    <a class="btn btn-link" href="{{ path('Realisations')}}">{{ "Réalisations"|trans}}</a>
+                    <a class="btn btn-link" href="{{ path('Photo')}}">{{ "Gallerie"|trans}}</a>
+                    <a class="btn btn-link" href="{{ path('Contact')}}">{{ "Contact"|trans}}</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">{{ "Gallerie"|trans}}</h4>
+                    <a href="{{ path('Pipeline-4km')}}" class="btn btn-link fw-medium">{{ "Pipelines"|trans }}</a>
+                    <a href="{{ path('Reservoir-10000')}}" class="btn btn-link fw-medium">{{ "Reservoir-10000m"|trans }}<sup>3</sup></a>
+                    <a href="{{ path('Reservoir-DCI')}}" class="btn btn-link fw-medium">{{ "Reservoir DCI"|trans }}</a>
+                    <a href="{{ path('Reservoir-JET')}}" class="btn btn-link fw-medium">{{ "Reservoir JET A1"|trans }}</a>
+                    <a href="{{ path('Revamping')}}" class="btn btn-link fw-medium">{{ "Revamping"|trans }}</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">{{ "Contact"|trans }}</h4>
+                    <p class="mb-2 fw-medium">
+                        <i class="fa fa-map-marker-alt fa-lg me-2 text-bleu"></i>
+                        BP 15746 Douala Akwa, Cameroun
+                    </p>
+                    <p class="mb-2">
+                        <a href="tel:+237621117743" class="footer-link fw-medium">
+                            <i class="fa fa-phone fa-lg me-2 text-bleu"></i>
+                            +237 6 21 11 77 43
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <a href="mailto:info@atlantis-cameroun.com" class="footer-link fw-medium">
+                        <i class="fa fa-envelope fa-lg me-2 text-bleu"></i>
+                            info@atlantis-cameroun.com
+                        </a>
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright px-0">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; 2023 Atlantis Cameroun, {{ "Tout droits réservés."|trans }}</p>
+            </div>
+            <div class="py-4 px-5 bg-bleu footer-shape position-relative text-center text-md-end">
+                <p class="mb-0">
+                    Designed By
+                    <a class="fw-bold text-white" href="https://euclideservices.com" target="_blank">EUCLIDES</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg back-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="{{ asset('js/jquery.min.js')}}"></script>
+<script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ asset('lib/wow/wow.min.js')}}"></script>
+<script src="{{ asset('lib/easing/easing.min.js')}}"></script>
+<script src="{{ asset('lib/waypoints/waypoints.min.js')}}"></script>
+<script src="{{ asset('lib/owlcarousel/js/owl.carousel.min.js')}}"></script>
+<script src="{{ asset('lib/photobox/js/jquery.photobox.js')}}"></script>
+<script src="{{ asset('lib/counterup/counterup.min.js')}}"></script>
+
+<!-- Main Javascript -->
+{#<script src="{{ asset('js/main.js')}}"></script>#}
+<script src="{{ asset('js/main.min.js')}}"></script>
+</body>
+
+</html>

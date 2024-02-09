@@ -1,0 +1,67 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Pipeline 4KM"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">{{ "Accueil"|trans }}</a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                <a class="text-white" href="{{ path('Photo') }}">{{ "Photo"|trans }}</a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Pipeline 4KM"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Projet de la réalisation du nouveau pipeline de 4km"|trans }}
+                </h3>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <a href="{{ path('Foncage') }}" class="text-dark hover-rouge">
+                        <div class="album-cover mb-5">
+                            <img src="{{ asset('images/pipeline-4km/foncage/foncage_12.jpeg') }}" alt="Foncage">
+                        </div>
+                        <h5 class="text-center text-uppercase lh-base mt-4">
+                            {{ "Foncage"|trans }}
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="{{ path('Racleurs') }}" class="text-dark hover-rouge">
+                        <div class="album-cover mb-5">
+                            <img src="{{ asset('images/pipeline-4km/gares-racleurs/gare_34.jpg') }}" alt="">
+                        </div>
+                        <h5 class="text-center text-uppercase lh-base mt-4">
+                            {{ "Gare racleur"|trans }}
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
