@@ -1,0 +1,100 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Réservoir 5000m3"|trans }} - {{ "Atlantis Cameroun"|trans }}{% endblock %}
+{% block gallery %} active {% endblock %}
+{% block photo %} active {% endblock %}
+{% block body %}
+    <div class="container-fluid py-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated slideInDown">
+                        {{ "Gallerie photo"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Gallerie"|trans }}
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                <a class="text-white" href="{{ path('Photo') }}">
+                                    {{ "Photo"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">
+                                {{ "Réservoir 5000m3"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="col-lg-4 offset-lg-4">
+                        {{ include('atlantis/search.twig') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 mb-5">
+        <div class="container mb-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="section-title bg-white text-center text-bleu px-3 mt-5 mb-5">
+                    {{ "Projet de construction d'un réservoir de 5000m3 pour stockage gas-oil"|trans }}
+                </h3>
+                <h4 class="banner p-5">
+                    {{ "Visite de la Directrice Générale de la Société Camerounaise des Dépôts Pétroliers (SCDP) accompagnée de ses sous-directeurs au dépôt de Belabo"|trans }}
+                </h4>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div id="gallery">
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_01.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_01.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_02.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_02.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_03.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_03.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_04.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_04.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_05.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_05.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_06.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_06.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_07.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_07.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_08.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_08.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_09.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_09.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_10.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_10.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_11.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_11.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_12.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_12.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_13.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_13.jpeg') }}" alt="">
+                    </a>
+                    <a href="{{ asset('images/reservoir-5000m3/reservoir-5000m3_14.jpeg') }}" class="gallery-thumbnail">
+                        <img src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_14.jpeg') }}" alt="">
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

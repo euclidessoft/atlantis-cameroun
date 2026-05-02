@@ -169,6 +169,14 @@ class securityController extends AbstractController
     }
 
     /**
+     * @Route("/gallery/photo/reservoir-5000", name="Reservoir-5000")
+     */
+    public function reservoir_5000(Request $request)
+        {
+            return  $this->render('atlantis/reservoir-5000m3.twig');
+    }
+
+    /**
      * @Route("/gallery/photo/reservoir-jeta1", name="Reservoir-JET")
      */
     public function reservoir_JET(Request $request)

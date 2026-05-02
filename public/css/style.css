@@ -365,6 +365,7 @@
 .navbar-light .navbar-nav .nav-link:hover {
     color: var(--blanc);
     border-bottom: 5px solid var(--blanc);
+    background: rgba(228, 2, 43, 0.7);
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -653,11 +654,13 @@
 .service-item {
     background: var(--gris-clair);
     transition: .5s;
+    border: 1px solid transparent;
 }
 
 .service-item:hover {
-    /*margin-top: -10px;*/
-    /*background: var(--rouge);*/
+    transform: translateY(-15px);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+    /*border: 1px solid var(--rouge);*/
 }
 
 .service-item * {
@@ -1096,5 +1099,6 @@ label {
     background-color: var(--gris-clair);
     border-radius: 1rem !important;
     margin-bottom: 3rem !important;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 

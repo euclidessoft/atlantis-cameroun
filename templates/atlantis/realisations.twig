@@ -84,15 +84,19 @@
                     <div class="row">
                         <div class="col-lg-5 ps-0 wow fadeInLeft" data-wow-delay="0.5s">
                             <div class="position-relative h-100">
-                                <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
-                                     src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61582.jpeg') }}"
-                                     alt="">
+                                <a href="{{ path('Reservoir-10000') }}">
+                                    <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
+                                         src="{{ asset('images/reservoir-10000m3/travaux-de-montage-du-reservoir/IMG61582.jpeg') }}"
+                                         alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-7 p-4">
                             <div class="row gy-4 py-5">
                                 <div class="col-lg-12 fw-bold fs-4 text-center wow fadeInRight" data-wow-delay="0.7s">
-                                    {{ "Construction d’un réservoir de 10 000m3 pour stockage gasoil"|trans }}
+                                    <a href="{{ path('Reservoir-10000') }}" class="text-dark hover-rouge">
+                                        {{ "Construction d’un réservoir de 10 000m3 pour stockage gasoil"|trans }}
+                                    </a>
                                 </div>
                                 <div class="col-lg-4 col-6 fw-bold text-end wow fadeInLeft" data-wow-delay="0.9s">
                                     <i class="fa-solid fa-calendar-alt fa-lg me-2 text-rouge"></i>
@@ -116,14 +120,18 @@
                     <div class="row">
                         <div class="col-lg-5 ps-0 wow fadeInLeft" data-wow-delay="0.5s">
                             <div class="position-relative h-100">
-                                <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
-                                     src="{{ asset('images/revamping/revamping_12.jpeg') }}" alt="">
+                                <a href="{{ path('Revamping') }}">
+                                    <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
+                                         src="{{ asset('images/revamping/revamping_12.jpeg') }}" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-7 p-4">
                             <div class="row gy-5 py-5">
                                 <div class="col-lg-12 fw-bold fs-4 text-center wow fadeInRight" data-wow-delay="0.7s">
-                                    {{ "Revamping des tuyauteries"|trans }}
+                                    <a href="{{ path('Revamping') }}" class="text-dark hover-rouge">
+                                        {{ "Revamping des tuyauteries"|trans }}
+                                    </a>
                                 </div>
                                 <div class="col-lg-4 col-6 fw-bold text-end wow fadeInLeft" data-wow-delay="0.9s">
                                     <i class="fa-solid fa-calendar-alt fa-lg me-2 text-rouge"></i>
@@ -147,14 +155,18 @@
                     <div class="row">
                         <div class="col-lg-5 ps-0 wow fadeInLeft" data-wow-delay="0.5s">
                             <div class="position-relative h-100">
-                                <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
-                                     src="{{ asset('images/pipeline-4km/gares-racleurs/gare_34.jpg') }}" alt="">
+                                <a href="{{ path('Pipeline-4km') }}">
+                                    <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
+                                         src="{{ asset('images/pipeline-4km/gares-racleurs/gare_34.jpg') }}" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-7 p-4">
                             <div class="row gy-4 py-5">
                                 <div class="col-lg-12 fw-bold fs-4 text-center wow fadeInRight" data-wow-delay="0.7s">
-                                    {{ 'Réalisation d’un pipeline de 10"sur 4km reliant le port autonome au dépôt SCDP de Bessengue'|trans }}
+                                    <a href="{{ path('Pipeline-4km') }}" class="text-dark hover-rouge">
+                                        {{ 'Réalisation d’un pipeline de 10"sur 4km reliant le port autonome au dépôt SCDP de Bessengue'|trans }}
+                                    </a>
                                 </div>
                                 <div class="col-lg-4 col-6 fw-bold text-end wow fadeInLeft" data-wow-delay="0.9s">
                                     <i class="fa-solid fa-calendar-alt fa-lg me-2 text-rouge"></i>
@@ -178,14 +190,18 @@
                     <div class="row">
                         <div class="col-lg-5 ps-0 wow fadeInLeft" data-wow-delay="0.5s">
                             <div class="position-relative h-100">
-                                <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
-                                     src="{{ asset('images/reservoir-DCI/reservoir-DCI_34.jpeg') }}" alt="">
+                                <a href="{{ path('Reservoir-DCI') }}">
+                                    <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
+                                         src="{{ asset('images/reservoir-DCI/reservoir-DCI_34.jpeg') }}" alt="">
+                                </a>
                             </div>
                         </div>
                         <div class="col-lg-7 p-4">
                             <div class="row gy-4 py-5">
                                 <div class="col-lg-12 fw-bold fs-4 text-center wow fadeInRight" data-wow-delay="0.7s">
-                                    {{ "Construction d’un réservoir boulonné défense contre incendie de 3000m3"|trans }}
+                                    <a href="{{ path('Reservoir-DCI') }}" class="text-dark hover-rouge">
+                                        {{ "Construction d’un réservoir boulonné défense contre incendie de 3000m3"|trans }}
+                                    </a>
                                 </div>
                                 <div class="col-lg-4 col-6 fw-bold text-end wow fadeInLeft" data-wow-delay="0.9s">
                                     <i class="fa-solid fa-calendar-alt fa-lg me-2 text-rouge"></i>
@@ -200,6 +216,42 @@
                                 </div>
                                 <div class="col-lg-8 wow fadeInRight" data-wow-delay="1.5s">
                                     {{ "Dépôt SCDP de Bafoussam"|trans }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="reservoir-5000" class="banner wow fadeInUp shadow" data-wow-delay="0.3s">
+                    <div class="row">
+                        <div class="col-lg-5 ps-0 wow fadeInLeft" data-wow-delay="0.5s">
+                            <div class="position-relative h-100">
+                                <a href="{{ path('Reservoir-5000') }}">
+                                    <img class="img-fluid position-absolute w-100 h-100 fit-cover rounded-start border"
+                                         src="{{ asset('images/reservoir-5000m3/reservoir-5000m3_cover.jpeg') }}"
+                                         alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 p-4">
+                            <div class="row gy-4 py-5">
+                                <div class="col-lg-12 fw-bold fs-4 text-center wow fadeInRight" data-wow-delay="0.7s">
+                                    <a href="{{ path('Reservoir-5000') }}" class="text-dark hover-rouge">
+                                        {{ "Projet de construction d'un réservoir de 5000m3 pour stockage gas-oil"|trans }}
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-6 fw-bold text-end wow fadeInLeft" data-wow-delay="0.9s">
+                                    <i class="fa-solid fa-calendar-alt fa-lg me-2 text-rouge"></i>
+                                    {{ "Année"|trans }} :
+                                </div>
+                                <div class="col-lg-8 col-6 wow fadeInRight" data-wow-delay="1.1s">
+                                    2026
+                                </div>
+                                <div class="col-lg-4 fw-bold text-end wow fadeInLeft" data-wow-delay="1.3s">
+                                    <i class="fa-solid fa-location-dot fa-lg me-2 text-rouge"></i>
+                                    {{ "Localisation"|trans }} :
+                                </div>
+                                <div class="col-lg-8 wow fadeInRight" data-wow-delay="1.5s">
+                                    {{ "Dépôt SCDP de Belabo"|trans }}
                                 </div>
                             </div>
                         </div>
